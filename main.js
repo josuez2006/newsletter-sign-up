@@ -2,20 +2,24 @@ const btn = document.getElementById('form__btn')
 const input = document.getElementById('input')
 const field = document.getElementById('field')
 
+const setFieldStateToDefault = () => field.setAttribute('data-state', 'neutral')
+const setFieldStateToError = () => field.setAttribute('data-state', 'error')
+
+
 btn.addEventListener('click', (e) => {
     e.preventDefault()
     input.value = ''
-    field.setAttribute('data-state', 'neutral')
+    setFieldStateToDefault()
 })
 
-input.addEventListener('focusout', (e) => {
+input.addEventListener('focusout', () => {
     const email = input.value
     const checkedEmail = validateEmail(email)
 
-    if (checkedEmail) {
-        field.setAttribute('data-state', 'neutral')
+    if (checkedEmail || email == "") {
+        setFieldStateToDefault()
     } else {
-        field.setAttribute('data-state', 'error')
+        setFieldStateToError()
     }
 })
 
@@ -24,3 +28,5 @@ function validateEmail(email) {
 
     return emailPattern.test(email)
 }
+
+
