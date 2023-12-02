@@ -1,0 +1,12 @@
+.attribution {
+    font-size: var(--fs-caption);
+    font-weight: 400;
+
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--clr-primary);
+}

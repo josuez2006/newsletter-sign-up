@@ -1,0 +1,73 @@
+/* Typography */
+
+body {
+    color: var(--clr-neutral-900);
+}
+
+.title {
+    font-size: var(--fs-title);
+    font-weight: 700;
+}
+
+.paragraph {
+    font-size: var(--fs-body);
+    font-weight: 400;
+}
+
+.caption {
+    font-size: var(--fs-caption);
+    font-weight: 700;
+}
+
+
+/* Common elements */
+
+.btn, .input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+
+    font-size: var(--fs-body);
+}
+
+.btn {
+    border: none;
+    background: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+
+    font-weight: 700;
+
+}
+
+.input {
+    border: 1px solid var(--clr-neutral-400);
+    outline: none;
+
+    font-weight: 400;
+}
+
+
+.btn:hover {
+    background: linear-gradient(90deg, var(--clr-secondary), var(--clr-primary));
+    animation: btnMovement 1.5s ease-in infinite;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+
+@keyframes btnMovement {
+    0%, 50%, 100% {
+        rotate: 0;
+        scale: 1;
+    }
+
+    25% {
+        rotate: 1deg;
+        scale: 1.1;
+    }
+
+    75% {
+        rotate: -1deg;
+        scale: 1.1;
+    }
+}

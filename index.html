@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="./style/setup.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/attribution.css" />
+  <link rel="stylesheet" href="./style/newsletter.css" />
+  <link rel="stylesheet" href="./style/tablet.css" />
+  <link rel="stylesheet" href="./style/desktop.css" />
+
+</head>
+<body>
+
+  <!-- Attribution  -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Josué Zalazar</a>.
+  </div>
+
+  
+  <!-- Content -->
+
+  <main class="main">
+
+    <form class="newsletter">
+
+
+      <!-- Form Image -->
+
+      <img class="newsletter__img--mobile" src="./assets/images/illustration-sign-up-mobile.svg"/>
+      <img class="newsletter__img--desktop" src="./assets/images/illustration-sign-up-desktop.svg"/>
+
+
+      <!-- Form Info -->
+
+      <div class="newsletter__info">
+
+        <h1 class="title newsletter__title">Stay updated!</h1>
+        <p class="paragraph newsletter__paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+
+
+        <!-- Features list -->
+
+        <div class="newsletter__features-list">
+          <div class="newsletter__feature">
+            <img class="newsletter__icon" src="./assets/images/icon-list.svg" />
+            <p class="paragraph">Product discovery and building what matters</p>
+          </div>
+
+          <div class="newsletter__feature">
+            <img class="newsletter__icon" src="./assets/images/icon-list.svg" />
+            <p class="paragraph">Measuring to ensure updates are a success</p>
+          </div>
+
+          <div class="newsletter__feature">
+            <img class="newsletter__icon" src="./assets/images/icon-list.svg" />
+            <p class="paragraph">And much more!</p>
+          </div>
+
+        </div>
+
+
+        <!-- Input field -->
+
+        <div class="newsletter__field" data-state="neutral" id="field">
+          <div class="field__info">
+            <strong class="caption">Email address</strong>
+            <span class="field__error">Valid email required</span>
+          </div>
+
+          <input class="input" type="email" placeholder="email@company.com" id="input"/>
+        </div>
+
+
+        <!-- Form button -->
+
+        <button class="btn" type="submit" id="form__btn">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+
+    </form>
+  </main>
+
+
+
+  
+
+  <!-- Success message start -->
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+ 
+  
+  <script src="main.js"></script>
+ 
+</body>
+</html>
