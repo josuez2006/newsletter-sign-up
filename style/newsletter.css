@@ -10,8 +10,8 @@
     object-fit: cover;
     width: 100%;
 
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .newsletter__img--desktop {
@@ -27,12 +27,12 @@
 
 .newsletter__title,
 .newsletter__field {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .newsletter__paragraph,
 .newsletter__features-list {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .newsletter__features-list {
