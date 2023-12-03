@@ -33,11 +33,11 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [See site URL here]( https://josuez2006.github.io/newsletter-sign-up/)
 
 ## My process
 
-1- Analized the design
+1- Analyzed the design
 2- Make the Html structure
 3- Style for mobile devices
 4- Add responsiveness
