@@ -13,7 +13,7 @@ btn.addEventListener('click', (e) => {
     const checkedEmail = validateEmail(email)
 
     if (checkedEmail) {
-        window.location.href = './alert.html'
+        window.location.href = '/alert.html'
         input.value = ''
         setFieldStateToDefault()
     } else {
