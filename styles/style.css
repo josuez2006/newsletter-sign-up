@@ -2,6 +2,7 @@
 
 body {
     color: var(--clr-neutral-900);
+    font-family: 'Roboto';
 }
 
 .title {
