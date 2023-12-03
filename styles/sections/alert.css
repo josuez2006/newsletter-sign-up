@@ -1,0 +1,36 @@
+.alert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 2.5em 1.5em;
+    background: var(--clr-neutral-100);
+}
+
+.alert__content {
+    display: grid;
+    gap: 1rem;
+    padding-top: 5rem;
+}
+
+@media (min-width: 720px) {
+    body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        background-color: var(--clr-neutral-900);
+    }
+
+    .alert {
+        max-width: 25rem;
+        min-height: auto;
+        gap: 2rem;
+        border-radius: 1rem;
+        padding: 2.5em;
+    }
+
+    .alert__content {
+        padding: 0;
+    }
+    
+}

@@ -8,8 +8,17 @@ const setFieldStateToError = () => field.setAttribute('data-state', 'error')
 
 btn.addEventListener('click', (e) => {
     e.preventDefault()
-    input.value = ''
-    setFieldStateToDefault()
+
+    const email = input.value
+    const checkedEmail = validateEmail(email)
+
+    if (checkedEmail) {
+        window.location.href = './alert.html'
+        input.value = ''
+        setFieldStateToDefault()
+    } else {
+        setFieldStateToError()
+    }
 })
 
 input.addEventListener('focusout', () => {

@@ -1,0 +1,25 @@
+.attribution {
+    font-size: var(--fs-caption);
+    font-weight: 400;
+
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--clr-primary);
+}
+
+
+@media (min-width: 500px) {
+    .attribution {
+        border-bottom: 1px solid var(--clr-neutral-900);
+    }
+}
+
+@media (min-width: 1080px) {
+    .attribution {
+       background: var(--clr-neutral-100); 
+    }
+}
